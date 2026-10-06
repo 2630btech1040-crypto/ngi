@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <!-- Fixed Navigation Bar demonstrating CSS positioning & z-index -->
+    <header class="navbar">
+        <h1 id="portal-title">Student Portal Dashboard</h1>
+        <button id="theme-toggle-btn" class="btn">Toggle Dark Mode</button>
+    </header>
+
+    <div class="main-container">
+        <!-- Stage 1: Login Section -->
+        <section id="login-section" class="card">
+            <h2>Portal Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <div id="login-message" class="message"></div>
+        </section>
+
+        <!-- Stage 2: Student Portal Dashboard -->
+        <section id="portal-section" class="hidden">
+            <div class="controls-card card">
+                <h3>Dashboard Controls</h3>
+                <div class="flex-container">
+                    <button id="toggle-table-btn" class="btn">Hide Student Table</button>
+                    <button id="change-heading-btn" class="btn">Change Dashboard Title</button>
+                </div>
+            </div>
+
+            <div class="flex-container dashboard-cards">
+                <!-- Top Student Highlight Card -->
+                <div class="card top-student-card">
+                    <h3>Top Performing Student</h3>
+                    <div id="top-student-info">Loading top student...</div>
+                </div>
+
+                <!-- Total Students Card -->
+                <div class="card summary-card">
+                    <h3>Portal Overview</h3>
+                    <p id="total-students-count">Total Students Enrolled: 0</p>
+                </div>
+            </div>
+
+            <!-- Student Records Table -->
+            <div id="table-container" class="card">
+                <h3>Enrolled Students List</h3>
+                <table id="students-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Course</th>
+                            <th>Semester</th>
+                            <th>Marks</th>
+                        </tr>
+                    </thead>
+                    <tbody id="students-table-body">
+                        <!-- Generated via JS from XML -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
