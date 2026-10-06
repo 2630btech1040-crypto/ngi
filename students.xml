@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <name>Alice Smith</name>
+        <course>Computer Science</course>
+        <semester>4</semester>
+        <marks>92</marks>
+    </student>
+    <student>
+        <name>Bob Jones</name>
+        <course>Information Technology</course>
+        <semester>6</semester>
+        <marks>78</marks>
+    </student>
+    <student>
+        <name>Charlie Brown</name>
+        <course>Computer Science</course>
+        <semester>2</semester>
+        <marks>85</marks>
+    </student>
+    <student>
+        <name>Diana Prince</name>
+        <course>Software Engineering</course>
+        <semester>4</semester>
+        <marks>96</marks>
+    </student>
+    <student>
+        <name>Ethan Hunt</name>
+        <course>Cyber Security</course>
+        <semester>8</semester>
+        <marks>64</marks>
+    </student>
+    <student>
+        <name>Fiona Gallagher</name>
+        <course>Data Science</course>
+        <semester>4</semester>
+        <marks>88</marks>
+    </student>
+</students>
